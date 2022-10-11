@@ -1,0 +1,13 @@
+ru:
+  model:
+    errors:
+      location:
+        lat:
+          blank: 'No empty name required'
+          type: 'Wrong name type'
+        lon:
+          blank: 'No empty email param required'
+          type: 'Wrong email type'
+        city:
+          blank: 'No empty password param required'
+          type: 'Wrong password type'
