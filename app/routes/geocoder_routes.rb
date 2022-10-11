@@ -7,14 +7,11 @@ class AuthRoutes < Application
     post "/" do
       valid_params = validate_with!(LocationParamsValidation)
 
-      # result = Users::CreateService.call(
-      #   name: valid_params[:name],
-      #   email: valid_params[:email],
-      #   password: valid_params[:password]
-      # )
+      result = Goecoder::EncodeService.call(city: valid_params[:city])
 
       if result.success?
-        status 201
+        status 200
+        json meta: { encode: [result.location.lat, result.location.lon] }
       else
         status 422
         error_response result.user
