@@ -1,5 +1,5 @@
-module Geocoder
-  class Encode
+module Locations
+  class EncodeService
     prepend BaseService
 
     option :city
@@ -15,11 +15,11 @@ module Geocoder
     def find_location
       @location = ::Location.find(city: @city)
 
-      return fail_t!(:not_found) unless @location
+      return fail_t!(:not_found) if @location.blank?
     end
 
     def fail_t!(key)
-      fail!(I18n.t(key, scope: 'services.error.location'))
+      fail!(I18n.t(key, scope: 'services.errors.locations.encode_service'))
     end
   end
 end

@@ -1,5 +1,6 @@
 ru:
   services:
-    user_sessions:
-      create_service:
-        unauthorized: 'Пользователь не прошел аутентификацию'
+    errors:
+      locations:
+        encode_service:
+          not_found: 'Локация не найдена'

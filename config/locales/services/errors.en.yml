@@ -1,5 +1,6 @@
 en:
   services:
-    user_sessions:
-      create_service:
-        unauthorized: 'User was not authenticated'
+    errors:
+      locations:
+        encode_service:
+          not_found: 'Location was not found'

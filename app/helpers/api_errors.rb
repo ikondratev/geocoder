@@ -21,6 +21,11 @@ module ApiErrors
     error_response I18n.t(:not_found, scope: 'api.errors')
   end
 
+  error Sequel::UniqueConstraintViolation do
+    status 422
+    error_response I18n.t(:not_unique, scope: 'api.errors')
+  end
+
   error Validations::InvalidParams, KeyError do
     status 422
     error_response I18n.t(:validation_error, scope: 'api.errors')

@@ -2,12 +2,75 @@ ru:
   model:
     errors:
       location:
-        lat:
-          blank: 'Имя не может быть пустым'
-          type: 'Неверный тип имени'
-        lon:
-          blank: 'Email не может быть пустым'
-          type: 'Неверный тип почты'
+        geo_lat:
+          blank: 'geo_lat не может быть пустым'
+          type: 'Неверный тип geo_lat'
+        geo_lon:
+          blank: 'geo_lon не может быть пустым'
+          type: 'Неверный тип geo_lon'
         city:
-          blank: 'Пароль не может быть пустым'
-          type: 'Неверный тип пароля'
+          blank: 'city не может быть пустым'
+          type: 'Неверный тип city'
+        address`:
+          blank: 'address не может быть пустым'
+          type: 'Неверный тип поля address'
+        postal_code:
+          blank: 'postal_code не может быть пустым'
+          type: 'Неверный тип поля postal_code'
+        country:
+          blank: 'country не может быть пустым'
+          type: 'Неверный тип поля country'
+        federal_district:
+          blank: 'federal_district не может быть пустым'
+          type: 'Неверный тип поля federal_district'
+        region_type:
+          blank: 'region_type не может быть пустым'
+          type: 'Неверный тип поля region_type'
+        region:
+          blank: 'region не может быть пустым'
+          type: 'Неверный тип поля region'
+        area_type:
+          blank: 'area_type не может быть пустым'
+          type: 'Неверный тип поля area_type'
+        area:
+          blank: 'area не может быть пустым'
+          type: 'Неверный тип поля area'
+        city_type:
+          blank: 'city_type не может быть пустым'
+          type: 'Неверный тип поля city_type'
+        settlement_type:
+          blank: 'settlement_type не может быть пустым'
+          type: 'Неверный тип поля settlement_type'
+        settlement:
+          blank: 'settlement не может быть пустым'
+          type: 'Неверный тип поля settlement'
+        kladr_id:
+          blank: 'kladr_id не может быть пустым'
+          type: 'Неверный тип поля kladr_id'
+        fias_id:
+          blank: 'fias_id не может быть пустым'
+          type: 'Неверный тип поля fias_id'
+        fias_level:
+          blank: 'fias_level не может быть пустым'
+          type: 'Неверный тип поля fias_level'
+        capital_marker:
+          blank: 'capital_marker не может быть пустым'
+          type: 'Неверный тип поля capital_marker'
+        okato:
+          blank: 'okato не может быть пустым'
+          type: 'Неверный тип поля okato'
+        oktmo:
+          blank: 'oktmo не может быть пустым'
+          type: 'Неверный тип поля oktmo'
+        tax_office:
+          blank: 'tax_office не может быть пустым'
+          type: 'Неверный тип поля tax_office'
+        timezone:
+          blank: 'timezone не может быть пустым'
+          type: 'Неверный тип поля timezone'
+        population:
+          blank: 'population не может быть пустым'
+          type: 'Неверный тип поля population'
+        foundation_year:
+          blank: 'foundation_year не может быть пустым'
+          type: 'Неверный тип поля foundation_year'

@@ -1,11 +1,11 @@
-class BaseService
+module BaseService
   module ClassMethods
     def call(*args)
       new(*args).call
     end
   end
 
-  def self.prepand(base)
+  def self.prepended(base)
     base.extend Dry::Initializer[undefined: false]
     base.extend ClassMethods
   end
