@@ -2,6 +2,6 @@ require_relative "config/environment"
 
 use Rack::PostBodyContentTypeParser
 
-map "/auth" do
+map "/geocoder" do
   run GeoserviceRoutes
 end

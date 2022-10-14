@@ -22,13 +22,12 @@ PONG
 ```
 ##
 ```sh
-#login request:
+#encode request:
 curl --request POST \
-  --url http://localhost:3003/auth/login \
+  --url http://localhost:3005/geocoder/v1/ \
   --header 'Content-Type: application/json' \
   --data '{
-	"email": "new_ivan@gmail.com",
-	"password": "123342"
+	"city": "New York"
 }'
 ```
 ```sh

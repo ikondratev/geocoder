@@ -94,49 +94,5 @@ RSpec.describe GeoserviceRoutes, type: :routes do
         expect(response_body["errors"]).to eq(expected_error)
       end
     end
-
-    # context "in case of unauthenticated user" do
-    #   let(:user_params) do
-    #     {
-    #       email: "test@email.com",
-    #       password: "123"
-    #     }
-    #   end
-    #
-    #   let(:expected_error) do
-    #     [{ "detail"=>"Пользователь не прошел аутентификацию" }]
-    #   end
-    #
-    #   it "should return error" do
-    #     post "/v1/login", user_params
-    #
-    #     expect(response_body["errors"]).to eq(expected_error)
-    #   end
-    # end
-    #
-    # context "without any errors" do
-    #   before do
-    #     FactoryBot.create(:user)
-    #     FactoryBot.create(:user_session)
-    #   end
-    #
-    #   let(:user_params) do
-    #     {
-    #       email: "test@email.com",
-    #       password: "123"
-    #     }
-    #   end
-    #
-    #   let(:user_session) do
-    #     UserSession.last
-    #   end
-    #
-    #   it "should return valid result" do
-    #     post "/v1/login", user_params
-    #
-    #     expect(last_response.status).to eq(200)
-    #     expect(response_body["meta"]["token"]).not_to be_nil
-    #   end
-    # end
   end
 end
