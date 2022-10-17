@@ -1,10 +1,6 @@
-# auth
+# Geocoder
 ```sh
-Authentication service
-```
-## Dependencies:
-```sh
-ruby '2.7.2'
+Goecoding locations
 ```
 ## Dependencies:
 ```sh
@@ -14,7 +10,7 @@ ruby '2.7.2'
 ```sh
 #ping request:
 curl --request GET \
-  --url http://localhost:3003/auth/ping
+  --url http://localhost:3003/geocoder/ping
 ```
 ```sh
 #ping response:
@@ -32,21 +28,5 @@ curl --request POST \
 ```
 ```sh
 #login response:
-{ "meta": { "token": "0a72150e-01c6-4400-ac14-5838fc056938" } }
-```
-##
-```sh
-#signup request:
-curl --request POST \
-  --url http://localhost:3003/auth/signup \
-  --header 'Content-Type: application/json' \
-  --data '{
-	"email": "new_ivanov@mail.com",
-	"password": "123342",
-	"name": "name."
-}'
-```
-```sh
-#signup response:
-{ "errors": [{ "detail": "Ошибка в параметре запроса" }] }
+{ "meta": { "encode": { "lat": "44.878414", "lon": "39.190289" } } }
 ```
