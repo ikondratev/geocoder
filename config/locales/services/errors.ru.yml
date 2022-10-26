@@ -1,0 +1,6 @@
+ru:
+  services:
+    errors:
+      locations:
+        encode_service:
+          not_found: 'Локация не найдена'

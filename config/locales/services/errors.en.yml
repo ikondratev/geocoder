@@ -1,0 +1,6 @@
+en:
+  services:
+    errors:
+      locations:
+        encode_service:
+          not_found: 'Location was not found'

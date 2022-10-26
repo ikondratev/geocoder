@@ -1,0 +1,76 @@
+en:
+  model:
+    errors:
+      location:
+        geo_lat:
+          blank: 'geo_lat cannot be empty'
+          type: 'Wrong type of geo_lat'
+        geo_lon:
+          blank: 'geo_lon cannot be empty'
+          type: 'Wrong type of geo_lon'
+        city:
+          blank: 'city cannot be empty'
+          type: 'Wrong type of city'
+        address`:
+          blank: 'address cannot be empty'
+          type: 'Wrong type of address'
+        postal_code:
+          blank: 'postal_code cannot be empty'
+          type: 'Wrong type of postal_code'
+        country:
+          blank: 'country cannot be empty'
+          type: 'Wrong type of country'
+        federal_district:
+          blank: 'field cannot be empty'
+          type: 'Wrong type of federal_district'
+        region_type:
+          blank: 'field cannot be empty'
+          type: 'Wrong type of region_type'
+        region:
+          blank: 'field cannot be empty'
+          type: 'Wrong type of region'
+        area_type:
+          blank: 'area_type cannot be empty'
+          type: 'Wrong type of area_type'
+        area:
+          blank: 'area cannot be empty'
+          type: 'Wrong type of area'
+        city_type:
+          blank: 'city_type cannot be empty'
+          type: 'Wrong type of city_type'
+        settlement_type:
+          blank: 'settlement_type cannot be empty'
+          type: 'Wrong type of settlement_type'
+        settlement:
+          blank: 'settlement cannot be empty'
+          type: 'Wrong type of settlement'
+        kladr_id:
+          blank: 'kladr_id cannot be empty'
+          type: 'Wrong type of kladr_id'
+        fias_id:
+          blank: 'fias_id cannot be empty'
+          type: 'Wrong type of fias_id'
+        fias_level:
+          blank: 'fias_level cannot be empty'
+          type: 'Wrong type of fias_level'
+        capital_marker:
+          blank: 'capital_marker cannot be empty'
+          type: 'Wrong type of capital_marker'
+        okato:
+          blank: 'okato cannot be empty'
+          type: 'Wrong type of okato'
+        oktmo:
+          blank: 'oktmo cannot be empty'
+          type: 'Wrong type of oktmo'
+        tax_office:
+          blank: 'tax_office cannot be empty'
+          type: 'Wrong type of tax_office'
+        timezone:
+          blank: 'timezone cannot be empty'
+          type: 'Wrong type of timezone'
+        population:
+          blank: 'population cannot be empty'
+          type: 'Wrong type of population'
+        foundation_year:
+          blank: 'foundation_year cannot be empty'
+          type: 'Wrong type of foundation_year'
