@@ -1,3 +1,8 @@
 db:
   adapter: postgresql
   host: localhost
+app:
+  name: geocoder
+logger:
+  path: log/app.log
+  level: info

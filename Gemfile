@@ -12,6 +12,7 @@ gem 'sinatra-contrib', '~> 2.2.0'
 
 gem 'i18n', '~> 1.8.2'
 gem 'config', '~> 2.2.1'
+gem 'rack-ougai', '~> 0.3.0'
 
 gem 'pg', '~> 1.2.3'
 gem 'sequel', '~> 5.32.0'
