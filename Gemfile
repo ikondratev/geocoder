@@ -18,6 +18,9 @@ gem 'sequel', '~> 5.32.0'
 gem 'sequel-seed', '~> 1.1', '>= 1.1.2'
 gem 'bunny', '~> 2.19'
 
+gem 'rack-ougai', '~> 0.3.0'
+gem 'rack-request-id', '~> 0.0.4'
+
 gem 'dry-initializer', '~> 3.0.3'
 gem 'dry-validation', '~> 1.5.0'
 gem 'dry-types', '1.5'

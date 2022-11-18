@@ -1,8 +1,10 @@
 channel = RabbitMq.consumer_channel
 queue = channel.queue("geocoding", durable: true)
 
-queue.subscribe(manual_ack: true) do |delivery_info, _properties, payload|
+queue.subscribe(manual_ack: true) do |delivery_info, properties, payload|
   body = JSON(payload)
+
+  Thread.current[:request_id] = properties.headers["request_id"]
 
   result = Locations::EncodeService.call(city: body["city"])
 
