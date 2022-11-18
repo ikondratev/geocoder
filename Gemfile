@@ -25,6 +25,9 @@ gem 'dry-types', '1.5'
 gem 'activesupport', '~> 6.0.0', require: false
 gem 'fast_jsonapi', '~> 1.5'
 
+gem 'faraday'
+gem 'faraday_middleware'
+
 # Linters
 gem 'rubocop', require: false
 gem 'rubocop-rake', require: false
