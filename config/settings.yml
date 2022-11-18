@@ -1,3 +1,9 @@
 db:
   adapter: postgresql
   host: localhost
+rabbit_mq:
+  consumer_pool: 10
+ads:
+  base_url: http://localhost:9292
+app:
+  name: geocoder_service
