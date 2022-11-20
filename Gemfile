@@ -20,6 +20,7 @@ gem 'bunny', '~> 2.19'
 
 gem 'rack-ougai', '~> 0.3.0'
 gem 'rack-request-id', '~> 0.0.4'
+gem 'amazing_print', '~> 1.4'
 
 gem 'dry-initializer', '~> 3.0.3'
 gem 'dry-validation', '~> 1.5.0'
