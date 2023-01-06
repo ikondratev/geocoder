@@ -7,6 +7,7 @@ module Locations
     attr_reader :location
 
     def call
+      l "started", city: @city
       find_location
     end
 

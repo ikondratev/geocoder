@@ -37,5 +37,11 @@ Sequel.migration do
       
       primary_key [:filename]
     end
+    
+    create_table(:schema_seeds) do
+      column :filename, "text", :null=>false
+      
+      primary_key [:filename]
+    end
   end
 end

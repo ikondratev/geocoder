@@ -7,6 +7,7 @@ module AdsService
       # @param [Integer] post_id
       # @return [Hash] result
       def geocode_coordinates(lat:, lon:, post_id:)
+        l "started", lat: lat, lon: lon, post_id: post_id
         @connection.post(
           "#{@base_url}/#{post_id}/#{UPDATE_ACTION}"
         ) do |request|
@@ -16,7 +17,7 @@ module AdsService
           }.to_json
         end
       rescue StandardError => e
-        puts "[API::GEOCODE_LOCATION] error: #{e.message}"
+        le "Error geocode_coordinates", e
       end
     end
   end
