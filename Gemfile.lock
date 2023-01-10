@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/ikondratev/log_formatter
+  revision: a78a1ddc06842269f939682e089e5310dcd95e56
+  specs:
+    log_formatter (0.0.1)
+      debase
+      rspec (~> 3.9.0)
+      rubocop (~> 1.26)
+      rubocop-rake
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -196,6 +206,7 @@ DEPENDENCIES
   faraday_middleware
   fast_jsonapi (~> 1.5)
   i18n (~> 1.8.2)
+  log_formatter!
   pg (~> 1.2.3)
   puma (~> 4.3.12)
   rack-contrib (~> 2.3)

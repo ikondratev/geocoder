@@ -5,5 +5,3 @@ Bundler.require(:default, ENV["RACK_ENV"])
 
 require_relative "application_loader"
 ApplicationLoader.load_app!
-
-include System::Kernel

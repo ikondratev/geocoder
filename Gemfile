@@ -36,6 +36,8 @@ gem 'faraday_middleware'
 gem 'rubocop', require: false
 gem 'rubocop-rake', require: false
 
+gem 'log_formatter', git: 'https://github.com/ikondratev/log_formatter'
+
 group :test do
   gem 'ruby-debug-ide'
   gem 'debase'

@@ -4,6 +4,7 @@ module ApplicationLoader
   def load_app!
     init_config
     init_db
+    init_log
     require_app
     init_app
   end
@@ -16,6 +17,10 @@ module ApplicationLoader
 
   def init_db
     require_file "config/initializers/db"
+  end
+
+  def init_log
+    require_file "config/initializers/logger"
   end
 
   def require_app
